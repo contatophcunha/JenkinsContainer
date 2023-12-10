@@ -1,0 +1,14 @@
+#Build the Docker image:
+
+docker build -t my-jenkins-image .
+
+
+#Run the Docker container:
+
+docker run -p 8080:8080 -p 50000:50000 --name my-jenkins-container my-jenkins-image
+
+#Container Logs
+docker logs my-jenkins-container
+
+
+# YOU CAN ACESS IT BY NAVEGATING TO http://localhost:8080 in your web browser. 
